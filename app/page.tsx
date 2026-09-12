@@ -276,442 +276,452 @@ useEffect(() => {
   </div>
 </section>
 
-<section className="why-started">
-  <div className="why-started-inner">
+<section id="how-it-works" className="how-stitch">
+  <div className="how-stitch-inner">
 
-    <div className="why-started-story">
-      <p className="why-started-eyebrow">WHY WE STARTED</p>
+    {/* HEADER */}
+    <div className="how-stitch-header">
+      <div className="how-stitch-title">
+        <div className="how-stitch-eyebrow">
+          <span>HOW IT WORKS — दैनिक सेवा मार्ग</span>
+          <i />
+        </div>
+
+        <h2>
+          One simple route.
+          <br />
+          <em>Every day.</em>
+        </h2>
+      </div>
+
+      <div className="how-stitch-intro">
+        <p>
+          A small habit at home becomes dependable Gau Seva when every
+          roti has a clear route from your society to a gaushala.
+        </p>
+
+        <div className="how-route-status">
+          <span className="how-route-dot" />
+          <span>Daily Route Dispatch · 07:15 AM IST</span>
+        </div>
+      </div>
+    </div>
+
+
+    {/* CONNECTED JOURNEY */}
+
+    <div className="how-route">
+
+      <div className="how-route-line" />
+
+      <article className="how-route-card">
+        <div className="how-route-card-top">
+          <span>01 — SOCIETY SETUP</span>
+          <b>01</b>
+        </div>
+
+        <i />
+
+        <h3>A box arrives.</h3>
+
+        <p>
+          We install a collection point in your society.
+        </p>
+
+        <div className="how-route-meta">
+          <span>✓</span>
+          <p>Dedicated collection point installed at the society</p>
+        </div>
+      </article>
+
+
+      <article className="how-route-card">
+        <div className="how-route-card-top">
+          <span>02 — MORNING DEVOTION</span>
+          <b>02</b>
+        </div>
+
+        <i />
+
+        <h3>Families give one roti.</h3>
+
+        <p>
+          The one they were already making.
+        </p>
+
+        <div className="how-route-meta">
+          <span>✓</span>
+          <p>The first roti becomes a daily offering</p>
+        </div>
+      </article>
+
+
+      <article className="how-route-card">
+        <div className="how-route-card-top">
+          <span>03 — DAILY TRANSIT</span>
+          <b>03</b>
+        </div>
+
+        <i />
+
+        <h3>We collect daily.</h3>
+
+        <p>
+          Fixed e-rickshaw routes, at the same time every day.
+        </p>
+
+        <div className="how-route-meta">
+          <span>✓</span>
+          <p>Fixed collection routes across participating societies</p>
+        </div>
+      </article>
+
+
+      <article className="how-route-card">
+        <div className="how-route-card-top">
+          <span>04 — GAU SEVA FULFILLED</span>
+          <b>04</b>
+        </div>
+
+        <i />
+
+        <h3>It reaches the gaushala.</h3>
+
+        <p>
+          Delivered the same day, on the same route.
+        </p>
+
+        <div className="how-route-meta">
+          <span>✓</span>
+          <p>Rotis reach the gaushala for Gau Seva</p>
+        </div>
+      </article>
+
+    </div>
+
+
+    {/* DOCUMENTARY BLOCK */}
+
+    <div className="how-field-story">
+
+      <div className="how-field-image">
+        <img
+          src="/images/how-it-works-field.jpg"
+          alt="Pehli Roti Gau Matta Ki collection point"
+        />
+
+        <div className="how-field-image-overlay" />
+
+        <p className="how-field-image-caption">
+          A Roti Box serving as the bridge between homes and Gau Seva.
+        </p>
+      </div>
+
+
+      <div className="how-field-copy">
+
+        <div>
+          <span className="how-field-label">
+            FIELD REALITY · जमीनी हकीकत
+          </span>
+
+          <h3>
+            Restoring the sacred rhythm in modern neighbourhoods.
+          </h3>
+
+          <p>
+            For generations, the first roti made each morning belonged
+            to Gau Mata. As cities grew vertically, families became
+            physically separated from that daily tradition.
+          </p>
+
+          <p>
+            Our Roti Boxes create a simple, dependable connection
+            between households, collection routes and nearby gaushalas.
+          </p>
+        </div>
+
+        <a href="/how-it-works" className="how-field-link">
+          <span>See the full process</span>
+          <span>→</span>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    {/* NUMBERS */}
+
+    <div className="how-proof">
+
+      <div className="how-proof-grid">
+
+        <div className="how-proof-item">
+          <i />
+          <strong>148,000+</strong>
+          <span>Rotis Delivered</span>
+          <p>Clean &amp; dignified daily feeds</p>
+        </div>
+
+        <div className="how-proof-item">
+          <i />
+          <strong>1,240</strong>
+          <span>Homes Participating</span>
+          <p>Across active housing societies</p>
+        </div>
+
+        <div className="how-proof-item">
+          <i />
+          <strong>38</strong>
+          <span>Societies Covered</span>
+          <p>Gated communities &amp; neighbourhoods</p>
+        </div>
+
+        <div className="how-proof-item">
+          <i />
+          <strong>14</strong>
+          <span>Gaushalas Supported</span>
+          <p>Gaushalas connected to our routes</p>
+        </div>
+
+      </div>
+
+      <div className="how-proof-footer">
+        <span>Updated [March, 2025] · Based on daily collection logs</span>
+        <span>Verified through collection records</span>
+      </div>
+
+    </div>
+
+
+    {/* CTA */}
+
+    <div className="how-request">
+
+      <div className="how-request-pattern" />
+
+      <div className="how-request-content">
+
+        <span>BRING SEVA HOME</span>
+
+        <h3>
+          Bring a Roti Box
+          <br />
+          <em>to your society.</em>
+        </h3>
+
+        <p>
+          Tell us where you live. We&apos;ll check whether your society
+          falls on an existing collection route.
+        </p>
+
+        <div className="how-request-action">
+          <a href="/request-a-box">
+            Request a Roti Box
+            <span>→</span>
+          </a>
+        </div>
+
+        <div className="how-request-trust">
+          <span>● No cost to participating societies</span>
+          <span>● Daily scheduled collection</span>
+          <span>● Dedicated collection route</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section className="network-showcase">
+  <div className="network-showcase-inner">
+
+    {/* HEADING */}
+    <div className="network-heading">
+      <div className="network-eyebrow">
+        <span />
+        OUR NETWORK · जीवंत सेवा नेटवर्क
+        <span />
+      </div>
 
       <h2>
-        The First Roti Was
+        See the Movement Growing
         <br />
-        Always Hers.{" "}
-        <span>We're Helping It Find Its Way Back.</span>
-      </h2>
-
-      <p className="why-started-lead">
-        For generations, Indian households have kept aside the first roti
-        for Gau Mata.
-      </p>
-
-      <p>
-        There was a time when offering it was simple. Cows were a familiar
-        presence around our homes and neighbourhoods, and feeding them could
-        be part of an everyday routine.
-      </p>
-
-      <p>
-        But our cities changed. Homes became apartments. Communities became
-        more enclosed. Gaushalas moved farther away. For many families, even
-        finding a cow nearby became difficult.
-      </p>
-    </div>
-
-    <div className="why-started-question">
-      <span className="quote-mark">“</span>
-
-      <p>
-        What if the cow could
-        <br />
-        no longer come to
-        <br />
-        every home — but
-        <br />
-        the first roti from
-        <br />
-        every home could
-        <br />
-        still reach her?
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<section id="how-it-works" className="journey-section">
-  <div className="journey-section-inner">
-
-    <div className="journey-section-heading">
-      <span>HOW IT WORKS</span>
-      <h2>One Roti. One Simple Journey.</h2>
-      <p>
-        From a family&apos;s kitchen to Gau Matta, every roti follows a simple,
-        organised journey.
-      </p>
-    </div>
-
-    <div className="journey-timeline">
-
-      <div className="journey-center-line" />
-
-      {/* STEP 1 */}
-      <div className="journey-step">
-        <div className="journey-media journey-media-left">
-          <div className="journey-image journey-image-circle">
-            <img
-              src="/images/hero-roti-box.jpg"
-              alt="Pehli Roti collection box installed in a society"
-            />
-          </div>
-
-          <span className="journey-node" />
-        </div>
-
-        <div className="journey-copy journey-copy-right">
-          <span className="journey-number">01</span>
-
-          <h3>A Roti Box Comes to Your Society</h3>
-
-          <p>
-            A dedicated Pehli Roti collection box is installed at an
-            accessible location within the community.
-          </p>
-        </div>
-      </div>
-
-
-      {/* STEP 2 */}
-      <div className="journey-step journey-step-reverse">
-        <div className="journey-media journey-media-right">
-          <div className="journey-image journey-image-organic-right">
-            <img
-              src="/images/hero-collection-team.jpg"
-              alt="Families participating in the Pehli Roti initiative"
-            />
-          </div>
-
-          <span className="journey-node" />
-        </div>
-
-        <div className="journey-copy journey-copy-left">
-          <span className="journey-number">02</span>
-
-          <h3>Families Add Their Rotis</h3>
-
-          <p>
-            Families keep aside their first roti for Gau Matta and place it
-            in the shared Roti Box as part of their daily routine.
-          </p>
-        </div>
-      </div>
-
-
-      {/* STEP 3 */}
-      <div className="journey-step">
-        <div className="journey-media journey-media-left">
-          <div className="journey-image journey-image-circle">
-            <img
-              src="/images/hero-collection-vehicle.jpg"
-              alt="Pehli Roti collection vehicle"
-            />
-          </div>
-
-          <span className="journey-node" />
-        </div>
-
-        <div className="journey-copy journey-copy-right">
-          <span className="journey-number">03</span>
-
-          <h3>Collected & Transported Every Day</h3>
-
-          <p>
-            Our collection team follows the route every day, gathering the
-            rotis and carrying them through our network.
-          </p>
-        </div>
-      </div>
-
-
-      {/* STEP 4 */}
-      <div className="journey-step journey-step-reverse">
-        <div className="journey-media journey-media-right">
-          <div className="journey-image journey-image-organic-left">
-            <img
-              src="/images/hero-gaushala.jpg"
-              alt="Rotis reaching Gau Matta at a gaushala"
-            />
-          </div>
-
-          <span className="journey-node" />
-        </div>
-
-        <div className="journey-copy journey-copy-left">
-          <span className="journey-number">04</span>
-
-          <h3>The Journey Ends at the Gaushala</h3>
-
-          <p>
-            The collected rotis finally reach associated gaushalas,
-            completing a simple act of everyday Gau Seva.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-    <div className="journey-final-note">
-      <p>
-        One collection box can bring an entire community together.
-      </p>
-
-      <a href="/request-a-box" className="action-btn journey-cta-action">
-        <span>Request a Roti Box</span>
-        <span className="action-btn-arrow">→</span>
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<section id="impact" className="impact-editorial">
-  <div className="impact-editorial-inner">
-
-    <div className="impact-editorial-heading">
-      <span>OUR IMPACT</span>
-
-      <h2>
-        Small Acts, Repeated Every Day,
-        <br />
-        Become Something Much Bigger.
+        <em>Across the City.</em>
       </h2>
 
       <p>
-        Together, we are building a sustainable cycle of nourishment,
-        community participation and everyday Gau Seva.
+        Every pin represents a real Pehli Roti Box connecting a community
+        with Gau Mata.
       </p>
     </div>
 
-    <div className="impact-moments">
 
-      <div className="impact-moment">
-        <div className="impact-moment-icon">🫓</div>
-        <strong>XX+</strong>
-        <h3>Rotis Collected</h3>
-        <p>
-          Offered by families through our daily Roti Box network.
-        </p>
-      </div>
+    {/* MAP + NETWORK STORY */}
+    <div className="network-main">
 
-      <div className="impact-moment">
-        <div className="impact-moment-icon">🐄</div>
-        <strong>XX+</strong>
-        <h3>Cows Reached</h3>
-        <p>
-          Through associated gaushalas and Gau Seva initiatives.
-        </p>
-      </div>
+      <div className="network-map-shell">
 
-      <div className="impact-moment">
-        <div className="impact-moment-icon">🏠</div>
-        <strong>XX+</strong>
-        <h3>Roti Boxes Installed</h3>
-        <p>
-          Across participating communities and residential societies.
-        </p>
-      </div>
+        <div className="network-map-hint">
+          <span className="network-map-hint-dot" />
 
-      <div className="impact-moment">
-        <div className="impact-moment-icon">🤝</div>
-        <strong>XX+</strong>
-        <h3>Communities Connected</h3>
-        <p>
-          Helping families continue the tradition of Pehli Roti.
-        </p>
-      </div>
+          <strong>Click a Roti Box to see its story</strong>
 
-    </div>
+          <span className="network-map-hint-divider">|</span>
 
-    <div className="impact-story-strip">
-
-      <div className="impact-story-item">
-        <img
-          src="/images/hero-roti-box.jpg"
-          alt="Roti Box installed in a residential community"
-        />
-        <div className="impact-story-label">
-          Installed in your society
+          <span>Delhi NCR</span>
         </div>
+
+        <RotiBoxMap />
+
       </div>
 
-      <div className="impact-story-item">
-        <img
-          src="/images/hero-collection-team.jpg"
-          alt="Pehli Roti collection team"
-        />
-        <div className="impact-story-label">
-          Collected every day
+
+      <aside className="network-story-panel">
+
+        <div className="network-panel-top">
+
+          <div className="network-live-label">
+            <span className="network-live-dot" />
+            LIVE SEVA NETWORK
+          </div>
+
+          <h3>
+            Every Roti Box has a place, a story and the people who made
+            it possible.
+          </h3>
+
+          <p>
+            As our network grows, every installed box appears here with
+            its location, installation record and Seva contributors.
+          </p>
+
+
+          <div className="network-metrics">
+
+            <div>
+              <strong>3</strong>
+              <span>Roti Boxes Installed</span>
+            </div>
+
+            <div>
+              <strong>3</strong>
+              <span>Locations Covered</span>
+            </div>
+
+          </div>
+
+
+          <div className="network-smriti">
+
+            <span className="network-smriti-icon">♡</span>
+
+            <div>
+              <strong>Seva Smriti</strong>
+
+              <p>
+                Every installed box carries the names of the people
+                who helped make it possible.
+              </p>
+            </div>
+
+          </div>
+
         </div>
-      </div>
 
-      <div className="impact-story-item">
-        <img
-          src="/images/hero-collection-vehicle.jpg"
-          alt="Roti collection vehicle"
-        />
-        <div className="impact-story-label">
-          Carried through our network
+
+        <div className="network-panel-footer">
+
+          <div className="network-status">
+            <span />
+            Network updated from verified installation records
+          </div>
+
+          <a
+            href="/request-a-box"
+            className="network-request-btn action-btn"
+          >
+            <span>Bring a Roti Box to your society</span>
+            <span className="action-btn-arrow">→</span>
+          </a>
+
         </div>
-      </div>
 
-      <div className="impact-story-item">
-        <img
-          src="/images/hero-gaushala.jpg"
-          alt="Cows at a gaushala"
-        />
-        <div className="impact-story-label">
-          Delivered to gaushalas
+      </aside>
+
+    </div>
+
+
+    {/* RECENT / VERIFIED LOCATIONS */}
+    <div className="network-registry">
+
+      <div className="network-registry-header">
+
+        <div>
+          <span>VERIFIED INSTALLATION REGISTRY</span>
+          <h3>Recently Commissioned Roti Boxes</h3>
         </div>
+
+        <p>3 Active Locations</p>
+
       </div>
 
-    </div>
 
-    <div className="impact-editorial-cta">
+      <div className="network-registry-grid">
 
-      <p>See where this seva is happening.</p>
+        <button className="network-registry-item">
+          <span className="network-registry-number">01</span>
 
-      <a href="#roti-box-map" className="action-btn">
-        <span>Explore the Roti Box Map</span>
-        <span className="action-btn-arrow">→</span>
-      </a>
+          <div>
+            <span className="network-registry-tag">PRG-001</span>
 
-    </div>
+            <h4>R.K. Puram</h4>
 
-  </div>
-</section>
+            <p>New Delhi</p>
 
-<RotiBoxMap />
-
-      <section id="about" className="home-about">
-  <div className="about-image-placeholder">
-    NGO / Community Photo
-  </div>
-
-  <div className="about-content">
-    <p className="eyebrow">WHO WE ARE</p>
-
-    <h2>
-      A Simple Tradition,
-      Made Possible for Modern Communities
-    </h2>
-
-    <p>
-      Pehli Roti Gau Matta Ki helps communities participate in the
-      tradition of offering rotis to Gau Matta through an organised
-      collection network.
-    </p>
-
-    <p>
-      Our story and the journey behind the initiative will be added here.
-    </p>
-
-    <a href="/about" className="text-link text-action">
-      <span>Know Our Story</span>
-      <span className="text-action-arrow">→</span>
-    </a>
-  </div>
-</section>
-
-      <section id="gaushalas" className="home-gaushalas">
-  <div className="gaushala-heading">
-    <p className="eyebrow">OUR GAUSHALAS</p>
-    <h2>Where Your Roti Goes</h2>
-    <p>
-      The rotis collected from participating societies are delivered to
-      associated gaushalas through our daily collection network.
-    </p>
-  </div>
-
-  <div className="gaushala-grid">
-    <div className="gaushala-card">
-      <div className="gaushala-image-placeholder">
-        Gaushala Photo
-      </div>
-
-      <div className="gaushala-card-content">
-        <h3>Gaushala Name</h3>
-        <p>Location will be added here.</p>
-      </div>
-    </div>
-
-    <div className="gaushala-card">
-      <div className="gaushala-image-placeholder">
-        Gaushala Photo
-      </div>
-
-      <div className="gaushala-card-content">
-        <h3>Gaushala Name</h3>
-        <p>Location will be added here.</p>
-      </div>
-    </div>
-
-    <div className="gaushala-card">
-      <div className="gaushala-image-placeholder">
-        Gaushala Photo
-      </div>
-
-      <div className="gaushala-card-content">
-        <h3>Gaushala Name</h3>
-        <p>Location will be added here.</p>
-      </div>
-    </div>
-  </div>
-
-  <div className="gaushala-link-wrapper">
-    <a href="/gaushalas" className="text-link text-action">
-      <span>View Our Gaushalas</span>
-      <span className="text-action-arrow">→</span>
-    </a>
-  </div>
-</section>
-
-      <section id="get-involved" className="home-get-involved">
-  <div className="get-involved-heading">
-    <p className="eyebrow">GET INVOLVED</p>
-    <h2>Be Part of the Movement</h2>
-    <p>
-      Whether you represent a society, want to volunteer, or wish to support
-      our work, there is a simple way to contribute.
-    </p>
-  </div>
-
-  <div className="get-involved-grid">
-    <a href="/request-a-box" className="involvement-card interactive-card">
-      <span className="involvement-icon">📦</span>
-      <h3>Request a Roti Box</h3>
-      <p>
-        Bring the Pehli Roti collection system to your society or community.
-      </p>
-      <span className="involvement-link">Request a Box <span className="card-arrow">→</span></span>
-    </a>
-
-    <a href="/get-involved" className="involvement-card interactive-card">
-      <span className="involvement-icon">🤝</span>
-      <h3>Volunteer With Us</h3>
-      <p>
-        Support collection drives, society coordination and community outreach.
-      </p>
-      <span className="involvement-link">Volunteer <span className="card-arrow">→</span></span>
-    </a>
-
-    <a href="/donate" className="involvement-card featured-involvement interactive-card">
-      <span className="involvement-icon">🙏</span>
-      <h3>Support Our Work</h3>
-      <p>
-        Help us expand collection routes, install more boxes and reach more gaushalas.
-      </p>
-      <span className="involvement-link">Donate <span className="card-arrow">→</span></span>
-    </a>
-  </div>
-</section>
-
-      <section id="donate">
-        <h2>Support Our Work</h2>
-        <p>Help us expand the roti collection network.</p>
-        <button className="action-btn donate-action-btn">
-          <span>Donate</span>
-          <span className="action-btn-arrow">→</span>
+            <small>● Active Roti Box</small>
+          </div>
         </button>
-      </section>
+
+
+        <button className="network-registry-item">
+          <span className="network-registry-number">02</span>
+
+          <div>
+            <span className="network-registry-tag">PRG-002</span>
+
+            <h4>Vasant Kunj</h4>
+
+            <p>New Delhi</p>
+
+            <small>● Active Roti Box</small>
+          </div>
+        </button>
+
+
+        <button className="network-registry-item">
+          <span className="network-registry-number">03</span>
+
+          <div>
+            <span className="network-registry-tag">PRG-003</span>
+
+            <h4>Munirka</h4>
+
+            <p>New Delhi</p>
+
+            <small>● Active Roti Box</small>
+          </div>
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
     </main>
   );
 }

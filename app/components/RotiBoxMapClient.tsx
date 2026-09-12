@@ -38,100 +38,63 @@ const rotiBoxIcon = L.divIcon({
   className: "roti-map-marker",
   html: `
     <div class="roti-map-marker-inner">
-      <span>📦</span>
+      <span>▣</span>
     </div>
   `,
-  iconSize: [42, 42],
-  iconAnchor: [21, 42],
-  popupAnchor: [0, -40],
+  iconSize: [44, 44],
+  iconAnchor: [22, 44],
+  popupAnchor: [0, -42],
 });
 
 export default function RotiBoxMapClient() {
   return (
-    <section id="roti-box-map" className="roti-map-section">
-      <div className="roti-map-heading">
-        <p className="section-kicker">OUR NETWORK</p>
+    <MapContainer
+      center={[28.55, 77.18]}
+      zoom={11}
+      scrollWheelZoom={false}
+      className="roti-leaflet-map"
+    >
+      <TileLayer
+        attribution="&copy; OpenStreetMap contributors"
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
 
-        <h2>See the Movement Growing Across the City.</h2>
+      {rotiBoxes.map((box) => (
+        <Marker
+          key={box.id}
+          position={[box.lat, box.lng]}
+          icon={rotiBoxIcon}
+        >
+          <Popup>
+            <div className="roti-map-popup">
+              <span className="roti-map-popup-id">{box.id}</span>
 
-        <p>
-          Every pin represents a real Pehli Roti Box connecting a community
-          with Gau Matta.
-        </p>
-      </div>
+              <h3>{box.name}</h3>
 
-      <div className="roti-map-layout">
-        <div className="roti-map-panel">
-          <MapContainer
-            center={[28.57, 77.18]}
-            zoom={11}
-            scrollWheelZoom={false}
-            className="roti-leaflet-map"
-          >
-            <TileLayer
-              attribution="&copy; OpenStreetMap contributors"
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
+              <p>{box.location}</p>
 
-            {rotiBoxes.map((box) => (
-              <Marker
-                key={box.id}
-                position={[box.lat, box.lng]}
-                icon={rotiBoxIcon}
-              >
-                <Popup>
-                  <div className="roti-map-popup">
-                    <span className="roti-map-popup-id">{box.id}</span>
+              <div className="roti-map-popup-meta">
+                <span>Installed: {box.installed}</span>
+                <span>{box.contributors} Gau Sevaks</span>
+              </div>
 
-                    <h3>{box.name}</h3>
+              <div className="roti-map-popup-actions">
+                <a href={`/roti-box/${box.id}`}>
+                  View Box
+                </a>
 
-                    <p>{box.location}</p>
-
-                    <div className="roti-map-popup-meta">
-                      <span>Installed: {box.installed}</span>
-                      <span>{box.contributors} Gau Sevaks</span>
-                    </div>
-
-                    <a
-                      href={`https://www.google.com/maps/search/?api=1&query=${box.lat},${box.lng}`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Get Directions →
-                    </a>
-                  </div>
-                </Popup>
-              </Marker>
-            ))}
-          </MapContainer>
-        </div>
-
-        <div className="roti-map-sidebar">
-          <p className="roti-map-sidebar-label">LIVE SEVA NETWORK</p>
-
-          <h3>
-            Every Roti Box has a place, a story and the people who made it
-            possible.
-          </h3>
-
-          <p>
-            As our network grows, each installed box will appear here with its
-            location, installation record and Seva contributors.
-          </p>
-
-          <div className="roti-map-stats">
-            <div>
-              <strong>{rotiBoxes.length}</strong>
-              <span>Roti Boxes</span>
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${box.lat},${box.lng}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Navigate →
+                </a>
+              </div>
             </div>
-
-            <div>
-              <strong>{rotiBoxes.length}</strong>
-              <span>Locations</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </Popup>
+        </Marker>
+      ))}
+    </MapContainer>
   );
 }
