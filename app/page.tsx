@@ -78,27 +78,34 @@ useEffect(() => {
       </div>
 
       <h1>
-        Your First Roti
-        <span> Can Still Reach Gau Matta.</span>
-      </h1>
+  One Roti a Day.
+  <br />
+  <span>From Your Kitchen to a Gaushala.</span>
+</h1>
 
-      <p>
-        We connect modern communities with gaushalas through a simple
-        daily Roti Box and collection network — keeping an age-old
-        tradition alive.
-      </p>
+<p>
+  We place a collection box in your society. Families drop in the first
+  roti of the day. We transport what&apos;s collected, fresh, to a gaushala
+  that is home to <strong>XX cows</strong>. Every day. No cost to you.
+</p>
 
-      <div className="hero-cinematic-actions">
-        <a href="/request-a-box" className="hero-cinematic-primary action-btn">
-          <span>Request a Roti Box</span>
-          <span className="action-btn-arrow">→</span>
-        </a>
+<div className="hero-cinematic-actions">
+  <a
+    href="/request-a-box"
+    className="hero-cinematic-primary action-btn"
+  >
+    <span>Request a Roti Box</span>
+    <span className="action-btn-arrow">→</span>
+  </a>
 
-        <a href="#how-it-works" className="hero-cinematic-secondary action-btn action-btn-down">
-          <span>See How It Works</span>
-          <span className="action-btn-arrow">↓</span>
-        </a>
-      </div>
+  <a
+    href="#how-it-works"
+    className="hero-cinematic-secondary action-btn action-btn-down"
+  >
+    <span>See How It Works</span>
+    <span className="action-btn-arrow">↓</span>
+  </a>
+</div>
 
       <div className="hero-cinematic-progress">
 
@@ -131,6 +138,142 @@ useEffect(() => {
 
   </div>
 
+</section>
+
+<section className="problem-editorial">
+  <div className="problem-editorial-inner">
+
+    <div className="problem-editorial-heading">
+      <div className="problem-editorial-eyebrow">
+        <span>THE PROBLEM</span>
+        <span className="problem-editorial-line" />
+        <em>गौः विश्वस्य मातरः</em>
+      </div>
+
+      <h2>
+        A tradition without
+        <br />
+        <span>a last mile.</span>
+      </h2>
+    </div>
+
+    <div className="problem-editorial-grid">
+
+      <div className="problem-editorial-copy">
+
+        <blockquote>
+          <p>
+            In most Indian homes, the first roti of the day belongs
+            to the cow.
+          </p>
+
+          <span>
+            In an apartment, there is no cow at the gate.
+          </span>
+        </blockquote>
+
+        <div className="problem-editorial-body">
+          <p>
+            So the roti is left on the roadside or under a tree,
+            in the hope that some animal finds it. Often none does,
+            and it becomes litter instead of feed.
+          </p>
+
+          <p>
+            Meanwhile, gaushalas a few kilometres away need a
+            dependable supply of food for the cows in their care.
+          </p>
+        </div>
+
+        <div className="problem-editorial-stat">
+          <span className="problem-stat-icon">△</span>
+
+          <div>
+            <strong>THE URBAN DISCONNECT</strong>
+
+            <p>
+              A sacred daily habit still exists — but the connection
+              between urban homes and nearby gaushalas has been lost.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="problem-editorial-photo">
+        <img
+          src="/images/problem-cow.jpg"
+          alt="Gau seva and roti collection"
+        />
+
+        <div className="problem-photo-caption">
+          <span>THE DAILY REALITY</span>
+
+          <p>
+            Every morning, families keep aside a roti with devotion.
+            Our work is to make sure it reaches Gau Mata.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div className="problem-connection">
+
+      <div className="problem-connection-heading">
+        <div>
+          <span>THE MISSING CONNECTION</span>
+          <h3>We connect the two.</h3>
+        </div>
+
+        <p>
+          A simple collection network that connects homes,
+          society Roti Boxes and gaushalas.
+        </p>
+      </div>
+
+      <div className="problem-journey">
+
+        <div className="problem-journey-step">
+          <span>01</span>
+          <strong>Your Kitchen</strong>
+          <em>First Roti</em>
+          <p>The first roti is kept aside at home.</p>
+        </div>
+
+        <div className="problem-journey-step">
+          <span>02</span>
+          <strong>Your Society</strong>
+          <em>Common Drop Point</em>
+          <p>Families place it in the society Roti Box.</p>
+        </div>
+
+        <div className="problem-journey-step">
+          <span>03</span>
+          <strong>The Roti Box</strong>
+          <em>Collected Together</em>
+          <p>Rotis remain at one dedicated collection point.</p>
+        </div>
+
+        <div className="problem-journey-step">
+          <span>04</span>
+          <strong>Our Collection Route</strong>
+          <em>Daily Pickup</em>
+          <p>Our team collects and transports the rotis.</p>
+        </div>
+
+        <div className="problem-journey-step">
+          <span>05</span>
+          <strong>Gaushala</strong>
+          <em>Gau Seva</em>
+          <p>The rotis finally reach cows in a gaushala.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
 <section className="why-started">

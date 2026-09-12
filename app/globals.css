@@ -126,7 +126,7 @@ button:hover {
    GENERAL SECTIONS
 ========================= */
 
-section:not(#hero):not(.hero-cinematic):not(.why-started):not(.home-process):not(.journey-section):not(.impact-new):not(.roti-map-section) {
+section:not(#hero):not(.hero-cinematic):not(.problem-editorial):not(.why-started):not(.home-process):not(.journey-section):not(.impact-new):not(.roti-map-section) {
   max-width: 1200px;
   margin: auto;
   padding: 100px 32px;
@@ -3294,5 +3294,741 @@ footer p {
   .nav-links a:not(.nav-cta)::after,
   .nav-cta {
     transition: none;
+  }
+}
+
+/* =========================================================
+   PROBLEM EDITORIAL
+========================================================= */
+
+.problem-editorial {
+  position: relative;
+
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+
+  padding: 125px 40px 115px;
+
+  box-sizing: border-box;
+
+  background: #0f1d16;
+  color: #fff8ee;
+
+  overflow: hidden;
+}
+
+.problem-editorial::before {
+  content: "";
+
+  position: absolute;
+  top: -220px;
+  left: -180px;
+
+  width: 620px;
+  height: 620px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(183, 101, 63, 0.10) 0%,
+      rgba(183, 101, 63, 0.035) 42%,
+      transparent 72%
+    );
+
+  pointer-events: none;
+}
+
+.problem-editorial-inner {
+  position: relative;
+  z-index: 2;
+
+  width: min(100% - 40px, 1500px);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   TOP HEADING
+========================================================= */
+
+.problem-editorial-heading {
+  max-width: 900px;
+
+  margin-bottom: 75px;
+}
+
+.problem-editorial-eyebrow {
+  margin-bottom: 22px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.problem-editorial-eyebrow > span:first-child {
+  color: #d89a72;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 0.2em;
+}
+
+.problem-editorial-line {
+  width: 52px;
+  height: 1px;
+
+  background: rgba(216, 154, 114, 0.65);
+}
+
+.problem-editorial-eyebrow em {
+  color: rgba(255, 248, 238, 0.55);
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 13px;
+  font-style: normal;
+
+  letter-spacing: 0.06em;
+}
+
+.problem-editorial-heading h2 {
+  margin: 0;
+
+  color: #fff8ee;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(56px, 5.8vw, 92px);
+  font-weight: 500;
+
+  line-height: 0.94;
+  letter-spacing: -0.045em;
+}
+
+.problem-editorial-heading h2 span {
+  color: #d8b18c;
+
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   MAIN EDITORIAL GRID
+========================================================= */
+
+.problem-editorial-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(0, 1.1fr);
+
+  gap: clamp(70px, 8vw, 130px);
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   LEFT COPY
+========================================================= */
+
+.problem-editorial-copy {
+  width: 100%;
+}
+
+.problem-editorial-copy blockquote {
+  margin: 0 0 38px;
+
+  padding-left: 30px;
+
+  border-left: 2px solid #b7653f;
+}
+
+.problem-editorial-copy blockquote p {
+  margin: 0;
+
+  max-width: 610px;
+
+  color: #fff8ee;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(25px, 2vw, 34px);
+
+  line-height: 1.35;
+}
+
+.problem-editorial-copy blockquote span {
+  display: block;
+
+  margin-top: 15px;
+
+  color: #d7b08b;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(19px, 1.45vw, 24px);
+
+  line-height: 1.45;
+}
+
+.problem-editorial-body {
+  max-width: 620px;
+}
+
+.problem-editorial-body p {
+  margin: 0 0 22px;
+
+  color: rgba(255, 248, 238, 0.68);
+
+  font-size: 16px;
+  line-height: 1.78;
+}
+
+
+/* =========================================================
+   URBAN DISCONNECT NOTE
+========================================================= */
+
+.problem-editorial-stat {
+  max-width: 610px;
+
+  margin-top: 38px;
+  padding-top: 28px;
+
+  display: grid;
+  grid-template-columns: 42px 1fr;
+
+  gap: 18px;
+
+  border-top: 1px solid rgba(255, 248, 238, 0.14);
+}
+
+.problem-stat-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(216, 154, 114, 0.35);
+  border-radius: 12px;
+
+  background: rgba(216, 154, 114, 0.06);
+
+  color: #d89a72;
+
+  font-size: 15px;
+}
+
+.problem-editorial-stat strong {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #d89a72;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.17em;
+}
+
+.problem-editorial-stat p {
+  margin: 0;
+
+  color: rgba(255, 248, 238, 0.62);
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   RIGHT PHOTO
+========================================================= */
+
+.problem-editorial-photo {
+  position: relative;
+
+  width: 100%;
+  height: 570px;
+  min-height: 570px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+
+  background: #17291f;
+
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.18);
+}
+
+.problem-editorial-photo img {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  /* Show more of the top of the original photograph */
+  object-position: center 30%;
+
+  filter:
+    saturate(0.88)
+    contrast(0.95)
+    brightness(0.86);
+
+  transform: none;
+}
+
+.problem-editorial-photo::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(7, 16, 11, 0.78) 0%,
+      rgba(7, 16, 11, 0.22) 38%,
+      rgba(7, 16, 11, 0.04) 68%,
+      transparent 82%
+    );
+
+  pointer-events: none;
+}
+
+
+/* PHOTO CAPTION */
+
+.problem-photo-caption {
+  position: absolute;
+  z-index: 2;
+
+  left: 34px;
+  right: 34px;
+  bottom: 30px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.problem-photo-caption span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #e0a47b;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.problem-photo-caption p {
+  max-width: 520px;
+
+  margin: 0;
+
+  color: rgba(255, 248, 238, 0.94);
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   CONNECTION AREA
+========================================================= */
+
+.problem-connection {
+  margin-top: 115px;
+  padding-top: 54px;
+
+  border-top: 1px solid rgba(255, 248, 238, 0.14);
+}
+
+.problem-connection-heading {
+  margin-bottom: 58px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+.problem-connection-heading span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #d89a72;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+}
+
+.problem-connection-heading h3 {
+  margin: 0;
+
+  color: #fff8ee;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(40px, 3.7vw, 58px);
+  font-weight: 500;
+
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.problem-connection-heading > p {
+  max-width: 430px;
+
+  margin: 0;
+
+  color: rgba(255, 248, 238, 0.58);
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   JOURNEY
+========================================================= */
+
+.problem-journey {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  gap: 0;
+}
+
+.problem-journey::before {
+  content: "";
+
+  position: absolute;
+
+  top: 34px;
+  left: 9%;
+  right: 9%;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(216, 154, 114, 0.2),
+      rgba(216, 154, 114, 0.75),
+      rgba(216, 154, 114, 0.2)
+    );
+}
+
+.problem-journey-step {
+  position: relative;
+  z-index: 2;
+
+  min-height: 215px;
+
+  padding: 0 24px 0;
+
+  text-align: center;
+}
+
+.problem-journey-step > span {
+  width: 68px;
+  height: 68px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(216, 154, 114, 0.52);
+  border-radius: 50%;
+
+  background: #0f1d16;
+
+  color: #d89a72;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 18px;
+}
+
+.problem-journey-step strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #fff8ee;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.problem-journey-step em {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #d8b18c;
+
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.problem-journey-step p {
+  max-width: 205px;
+
+  margin: 0 auto;
+
+  color: rgba(255, 248, 238, 0.52);
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   LARGE SCREENS
+========================================================= */
+
+@media (min-width: 1600px) {
+
+  .problem-editorial {
+    padding-top: 145px;
+    padding-bottom: 130px;
+  }
+
+  .problem-editorial-inner {
+    width: min(100% - 120px, 1640px);
+  }
+
+  .problem-editorial-photo {
+    min-height: 640px;
+  }
+
+  .problem-editorial-body p {
+    font-size: 17px;
+  }
+
+  .problem-photo-caption p {
+    font-size: 22px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .problem-editorial {
+    padding: 95px 28px 90px;
+  }
+
+  .problem-editorial-inner {
+    width: 100%;
+  }
+
+  .problem-editorial-heading {
+    margin-bottom: 55px;
+  }
+
+  .problem-editorial-grid {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .problem-editorial-photo {
+    min-height: 520px;
+  }
+
+  .problem-connection {
+    margin-top: 85px;
+  }
+
+  .problem-connection-heading {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .problem-journey {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    row-gap: 45px;
+  }
+
+  .problem-journey::before {
+    display: none;
+  }
+
+  .problem-journey-step {
+    min-height: 190px;
+
+    padding: 0 18px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .problem-editorial {
+    padding: 75px 20px 70px;
+  }
+
+  .problem-editorial-heading {
+    margin-bottom: 45px;
+  }
+
+  .problem-editorial-eyebrow {
+    flex-wrap: wrap;
+
+    gap: 10px;
+  }
+
+  .problem-editorial-line {
+    width: 34px;
+  }
+
+  .problem-editorial-heading h2 {
+    font-size: 46px;
+  }
+
+  .problem-editorial-heading h2 br {
+    display: none;
+  }
+
+  .problem-editorial-grid {
+    gap: 45px;
+  }
+
+  .problem-editorial-copy blockquote {
+    padding-left: 18px;
+  }
+
+  .problem-editorial-copy blockquote p {
+    font-size: 24px;
+  }
+
+  .problem-editorial-copy blockquote span {
+    font-size: 18px;
+  }
+
+  .problem-editorial-body p {
+    font-size: 15px;
+  }
+
+  .problem-editorial-stat {
+    grid-template-columns: 36px 1fr;
+
+    gap: 14px;
+  }
+
+  .problem-editorial-photo {
+    min-height: 430px;
+  }
+
+  .problem-photo-caption {
+    left: 22px;
+    right: 22px;
+    bottom: 22px;
+  }
+
+  .problem-photo-caption p {
+    font-size: 18px;
+  }
+
+  .problem-connection {
+    margin-top: 70px;
+    padding-top: 40px;
+  }
+
+  .problem-connection-heading {
+    margin-bottom: 45px;
+  }
+
+  .problem-connection-heading h3 {
+    font-size: 40px;
+  }
+
+  .problem-journey {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .problem-journey-step {
+    min-height: 0;
+
+    padding: 0 0 36px 82px;
+
+    text-align: left;
+  }
+
+  .problem-journey-step > span {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 56px;
+    height: 56px;
+
+    margin: 0;
+  }
+
+  .problem-journey-step strong {
+    font-size: 20px;
+  }
+
+  .problem-journey-step p {
+    max-width: none;
+
+    margin: 0;
+
+    font-size: 13px;
   }
 }
