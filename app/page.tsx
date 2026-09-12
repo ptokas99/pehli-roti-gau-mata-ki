@@ -1,6 +1,14 @@
 "use client";
+
 import { useEffect, useState } from "react";
-import RotiBoxMap from "./components/RotiBoxMapClient";
+import dynamic from "next/dynamic";
+
+const RotiBoxMap = dynamic(
+  () => import("./components/RotiBoxMapClient"),
+  {
+    ssr: false,
+  }
+);
 export default function Home() {
   const heroSlides = [
   {
