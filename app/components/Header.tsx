@@ -2,19 +2,64 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+
+const navItems = [
+  {
+    href: "/about",
+    label: "About",
+  },
+  {
+    href: "/how-it-works",
+    label: "How It Works",
+  },
+  {
+    href: "/impact",
+    label: "Impact",
+  },
+  {
+    href: "/gaushalas",
+    label: "Gaushalas",
+  },
+  {
+    href: "/get-involved",
+    label: "Get Involved",
+  },
+];
 
 export default function Header() {
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const closeMenu = () => setMenuOpen(false);
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
+  /* Close mobile menu whenever route changes */
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+
+  const isActive = (href: string) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
 
   return (
     <header className="site-header">
       <nav className="site-nav">
 
-        {/* LOGO + NGO NAME */}
-        <Link href="/" className="brand" onClick={closeMenu}>
+        {/* BRAND */}
+        <Link
+          href="/"
+          className="brand"
+          onClick={closeMenu}
+          aria-label="Pehli Roti Gau Matta Ki — Home"
+        >
           <Image
             src="/logo.png"
             alt="Pehli Roti Gau Matta Ki"
@@ -24,52 +69,69 @@ export default function Header() {
             className="brand-logo"
           />
 
-          <span className="brand-text">
-            Pehli Roti Gau Matta Ki
+          <span className="brand-copy">
+            <strong className="brand-text">
+              Pehli Roti Gau Matta Ki
+            </strong>
+
+            <small className="brand-hindi">
+              पहली रोटी गौ माता की
+            </small>
           </span>
         </Link>
 
-        {/* MOBILE MENU BUTTON */}
-        <button
-          className="menu-toggle"
-          type="button"
-          aria-label="Toggle navigation menu"
-          aria-expanded={menuOpen}
-          onClick={() => setMenuOpen(!menuOpen)}
+
+        {/* DESKTOP + MOBILE NAV */}
+        <div
+          id="site-navigation"
+          className={`nav-links ${menuOpen ? "open" : ""}`}
         >
-          {menuOpen ? "×" : "☰"}
-        </button>
+          {navItems.map((item) => {
+            const active = isActive(item.href);
 
-        {/* NAVIGATION */}
-        <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <Link href="/about" onClick={closeMenu}>
-            About
-          </Link>
-
-          <Link href="/how-it-works" onClick={closeMenu}>
-            How It Works
-          </Link>
-
-          <Link href="/impact" onClick={closeMenu}>
-            Impact
-          </Link>
-
-          <Link href="/gaushalas" onClick={closeMenu}>
-            Gaushalas
-          </Link>
-
-          <Link href="/get-involved" onClick={closeMenu}>
-            Get Involved
-          </Link>
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={closeMenu}
+                className={`nav-link ${active ? "active" : ""}`}
+                aria-current={active ? "page" : undefined}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
 
           <Link
             href="/request-a-box"
-            className="nav-cta"
             onClick={closeMenu}
+            className={`nav-cta action-btn ${
+              isActive("/request-a-box") ? "active" : ""
+            }`}
           >
-            Request a Roti Box
+            <span>Request a Roti Box</span>
+            <span className="action-btn-arrow">→</span>
           </Link>
         </div>
+
+
+        {/* MOBILE TOGGLE */}
+        <button
+          className={`menu-toggle ${menuOpen ? "open" : ""}`}
+          type="button"
+          aria-label={
+            menuOpen
+              ? "Close navigation menu"
+              : "Open navigation menu"
+          }
+          aria-expanded={menuOpen}
+          aria-controls="site-navigation"
+          onClick={() => setMenuOpen((current) => !current)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
 
       </nav>
     </header>
