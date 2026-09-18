@@ -1,11 +1,20 @@
-import "./globals.css";
-import Header from "./components/Header";
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Pehli Roti Gau Matta Ki",
+  title: {
+    default: "Pehli Roti Gau Matta Ki",
+    template: "%s | Pehli Roti Gau Matta Ki",
+  },
+
   description:
-    "Connecting communities with gaushalas through a daily roti collection network.",
+    "Connecting households with gaushalas through the daily tradition of the first roti.",
+
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -15,16 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-
-        {children}
-
-        <footer>
-          <h3>Pehli Roti Gau Matta Ki</h3>
-          <p>Registration details | Contact | Social Media</p>
-        </footer>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
