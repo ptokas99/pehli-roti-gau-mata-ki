@@ -9836,3 +9836,219 @@ footer p {
     font-weight: 700;
   }
 }
+
+/* =========================================================
+   HOME HERO — FINAL MOBILE LAYOUT
+   Image is compact + fully visible
+========================================================= */
+
+@media (max-width: 600px) {
+
+  /* HERO ITSELF */
+
+  .hero-cinematic {
+    position: relative;
+
+    width: 100%;
+
+    min-height: auto !important;
+    height: auto !important;
+
+    padding: 0 !important;
+
+    display: block !important;
+
+    background: #f7f2e7;
+
+    overflow: hidden;
+  }
+
+
+  /* =======================================================
+     SLIDESHOW / PHOTO AREA
+  ======================================================= */
+
+  .hero-cinematic-media {
+    position: relative !important;
+
+    width: 100% !important;
+    height: 52vh !important;
+    min-height: 360px !important;
+    max-height: 480px !important;
+
+    inset: auto !important;
+
+    overflow: hidden;
+
+    background: #ede8dc;
+  }
+
+
+  .hero-cinematic-slide,
+  .hero-cinematic-background {
+    position: absolute !important;
+
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    min-height: 0 !important;
+  }
+
+
+  /* ACTUAL PHOTO */
+
+  .hero-cinematic img,
+  .hero-cinematic-media img,
+  .hero-cinematic-slide img {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: contain !important;
+    object-position: center center !important;
+
+    transform: none !important;
+
+    background: #ede8dc;
+  }
+
+
+  /* =======================================================
+     LIGHT IMAGE OVERLAY
+  ======================================================= */
+
+  .hero-cinematic::after {
+    display: none !important;
+  }
+
+
+  .hero-cinematic-media::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(247, 242, 231, 0.03) 0%,
+        rgba(247, 242, 231, 0.06) 65%,
+        rgba(247, 242, 231, 0.72) 90%,
+        #f7f2e7 100%
+      );
+  }
+
+
+  /* =======================================================
+     HERO TEXT
+  ======================================================= */
+
+  .hero-cinematic-content {
+    position: relative !important;
+
+    z-index: 5;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: -38px 0 0 !important;
+
+    padding: 0 22px 42px !important;
+
+    box-sizing: border-box;
+
+    background: #f7f2e7;
+  }
+
+
+  .hero-cinematic-kicker {
+    margin: 0 0 11px !important;
+
+    font-size: 9px !important;
+    font-weight: 700;
+
+    letter-spacing: 0.13em;
+  }
+
+
+  .hero-cinematic h1 {
+    width: 100% !important;
+    max-width: 355px !important;
+
+    margin: 0 !important;
+
+    font-size: clamp(42px, 12vw, 54px) !important;
+
+    line-height: 0.94 !important;
+    letter-spacing: -0.045em !important;
+  }
+
+
+  /*
+     Allow only natural wrapping.
+     This prevents:
+     From
+     Your
+     Kitchen
+     on separate lines.
+  */
+
+  .hero-cinematic h1 br {
+    display: none !important;
+  }
+
+
+  .hero-cinematic-copy,
+  .hero-cinematic-content > p {
+    max-width: 345px !important;
+
+    margin: 17px 0 0 !important;
+
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+  }
+
+
+  /* =======================================================
+     BUTTONS
+  ======================================================= */
+
+  .hero-cinematic-actions {
+    width: 100%;
+
+    margin-top: 20px !important;
+
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 9px !important;
+  }
+
+
+  .hero-cinematic-primary,
+  .hero-cinematic-secondary {
+    width: 100% !important;
+
+    min-height: 48px;
+
+    padding: 0 16px !important;
+
+    box-sizing: border-box;
+
+    justify-content: space-between;
+  }
+
+
+  /* Desktop-only slider information takes too much room */
+
+  .hero-cinematic-meta,
+  .hero-slide-meta {
+    display: none !important;
+  }
+}
